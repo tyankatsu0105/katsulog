@@ -1,8 +1,26 @@
 {
   "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
   "version": "1.1.3",
+  "description": "Example Gatsby, and Netlify CMS project",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "author": "Austin Green",
+  "main": "n/a",
+  "scripts": {
+    "build": "run-p build:**",
+    "build:app": "npm run clean && gatsby build",
+    "build:lambda": "netlify-lambda build src/lambda",
+    "clean": "gatsby clean",
+    "develop": "npm run clean && gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "serve": "gatsby serve",
+    "start": "run-p start:**",
+    "start:app": "npm run develop",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "bulma": "^0.7.0",
     "gatsby": "^2.13.31",
@@ -31,24 +49,6 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "uuid": "^3.2.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "clean": "gatsby clean",
-    "start:app": "npm run develop",
-    "start:lambda": "netlify-lambda serve src/lambda",
-    "start": "run-p start:**",
-    "build:app": "npm run clean && gatsby build",
-    "build:lambda": "netlify-lambda build src/lambda",
-    "build": "run-p build:**",
-    "develop": "npm run clean && gatsby develop",
-    "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "http-proxy-middleware": "^0.19.1",
