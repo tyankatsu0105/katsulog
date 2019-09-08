@@ -9,7 +9,7 @@ import Content, { HTMLContent } from '../components/Content'
 import '../styles/post.scss'
 
 const StyledPostHeading = styled.h1`
-  color: var(--color-font-link);
+  color: var(--color-font-accent);
   font-size: 2rem;
   font-weight: bold;
 `;
@@ -79,7 +79,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "YYYY-mm-DD hh:mm", locale: "ja-jp")
+        date(formatString: "YYYY-MM-DD hh:mm", locale: "ja")
         title
         description
       }
