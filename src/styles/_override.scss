@@ -1,0 +1,31 @@
+:root{
+  --color-font-primary: #ccc;
+  --color-font-accent: #E2C08D;
+  --color-font-link: #73C991;
+
+  --color-background-primary: #282C34;
+
+  --transition-primary: 0.2s;
+
+  --opacity-primary: 0.7;
+}
+
+html{
+  color: var(--color-font-primary);
+  background-color: var(--color-background-primary);
+  line-height: 1.7;
+}
+
+a{
+  color: var(--color-font-link);
+  text-decoration: none;
+  transition: var(--transition-primary);
+
+  &:hover{
+    opacity: var(--opacity-primary);
+  }
+}
+
+ul,ol{
+  list-style-position: inside;
+}

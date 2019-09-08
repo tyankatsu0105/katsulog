@@ -22,7 +22,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "bulma": "^0.7.0",
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.0.23",
     "gatsby-plugin-netlify": "^2.0.6",
@@ -44,7 +45,6 @@
     "netlify-cms-media-library-uploadcare": "^0.5.2",
     "node-sass": "^4.11.0",
     "parcel-bundler": "^1.9.4",
-    "prop-types": "^15.6.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
