@@ -1,11 +1,7 @@
 ---
 templateKey: blog-post
-title: aaaaaaaaaaaaaaaaaa
+title: aっっっっっっっっ
 date: 2019-09-08T06:46:57.028Z
 description: asdfasdfasdfasdf
-featuredpost: true
-featuredimage: /img/blog-index.jpg
-tags:
-  - aaaaa
 ---
 sdfsdfasdf
