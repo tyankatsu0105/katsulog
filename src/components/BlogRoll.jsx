@@ -71,7 +71,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
-                date(formatString: "YYYY-mm-DD hh:mm", locale: "ja-jp")
+                date(formatString: "YYYY-MM-DD", locale: "ja")
               }
             }
           }
