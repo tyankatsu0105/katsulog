@@ -1110,6 +1110,28 @@
     "@emotion/utils" "0.11.2"
     "@emotion/weak-memoize" "0.2.3"
 
+"@emotion/cache@^10.0.17":
+  version "10.0.19"
+  resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.19.tgz#d258d94d9c707dcadaf1558def968b86bb87ad71"
+  integrity sha512-BoiLlk4vEsGBg2dAqGSJu0vJl/PgVtCYLBFJaEO8RmQzPugXewQCXZJNXTDFaRlfCs0W+quesayav4fvaif5WQ==
+  dependencies:
+    "@emotion/sheet" "0.9.3"
+    "@emotion/stylis" "0.8.4"
+    "@emotion/utils" "0.11.2"
+    "@emotion/weak-memoize" "0.2.4"
+
+"@emotion/core@^10.0.17":
+  version "10.0.21"
+  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.21.tgz#2e8398d2b92fd90d4ed6ac4d0b66214971de3458"
+  integrity sha512-U9zbc7ovZ2ceIwbLXYZPJy6wPgnOdTNT4jENZ31ee6v2lojetV5bTbCVk6ciT8G3wQRyVaTTfUCH9WCrMzpRIw==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    "@emotion/cache" "^10.0.17"
+    "@emotion/css" "^10.0.14"
+    "@emotion/serialize" "^0.11.10"
+    "@emotion/sheet" "0.9.3"
+    "@emotion/utils" "0.11.2"
+
 "@emotion/core@^10.0.9":
   version "10.0.14"
   resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.14.tgz#cac5c334b278d5b7688cfff39e460a5b50abb71c"
@@ -1136,6 +1158,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.7.2.tgz#53211e564604beb9befa7a4400ebf8147473eeef"
   integrity sha512-RMtr1i6E8MXaBWwhXL3yeOU8JXRnz8GNxHvaUfVvwxokvayUY0zoBeWbKw1S9XkufmGEEdQd228pSZXFkAln8Q==
 
+"@emotion/hash@0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.7.3.tgz#a166882c81c0c6040975dd30df24fae8549bd96f"
+  integrity sha512-14ZVlsB9akwvydAdaEnVnvqu6J2P6ySv39hYyl/aoB6w/V+bXX0tay8cF6paqbgZsN2n5Xh15uF4pE+GvE+itw==
+
 "@emotion/hash@^0.6.2", "@emotion/hash@^0.6.6":
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.6.6.tgz#62266c5f0eac6941fece302abad69f2ee7e25e44"
@@ -1148,15 +1175,38 @@
   dependencies:
     "@emotion/memoize" "0.7.2"
 
+"@emotion/is-prop-valid@0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.3.tgz#cbe62ddbea08aa022cdf72da3971570a33190d29"
+  integrity sha512-We7VBiltAJ70KQA0dWkdPMXnYoizlxOXpvtjmu5/MBnExd+u0PGgV27WCYanmLAbCwAU30Le/xA0CQs/F/Otig==
+  dependencies:
+    "@emotion/memoize" "0.7.3"
+
 "@emotion/memoize@0.7.2":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.2.tgz#7f4c71b7654068dfcccad29553520f984cc66b30"
   integrity sha512-hnHhwQzvPCW1QjBWFyBtsETdllOM92BfrKWbUTmh9aeOlcVOiXvlPsK4104xH8NsaKfg86PTFsWkueQeUfMA/w==
 
+"@emotion/memoize@0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.3.tgz#5b6b1c11d6a6dddf1f2fc996f74cf3b219644d78"
+  integrity sha512-2Md9mH6mvo+ygq1trTeVp2uzAKwE2P7In0cRpD/M9Q70aH8L+rxMLbb3JCN2JoSWsV2O+DdFjfbbXoMoLBczow==
+
 "@emotion/memoize@^0.6.1", "@emotion/memoize@^0.6.6":
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.6.6.tgz#004b98298d04c7ca3b4f50ca2035d4f60d2eed1b"
   integrity sha512-h4t4jFjtm1YV7UirAFuSuFGyLa+NNxjdkq6DpFLANNQY5rHueFZHVY+8Cu1HYVP6DrheB0kv4m5xPjo7eKT7yQ==
+
+"@emotion/serialize@^0.11.10", "@emotion/serialize@^0.11.11":
+  version "0.11.11"
+  resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-0.11.11.tgz#c92a5e5b358070a7242d10508143306524e842a4"
+  integrity sha512-YG8wdCqoWtuoMxhHZCTA+egL0RSGdHEc+YCsmiSBPBEDNuVeMWtjEWtGrhUterSChxzwnWBXvzSxIFQI/3sHLw==
+  dependencies:
+    "@emotion/hash" "0.7.3"
+    "@emotion/memoize" "0.7.3"
+    "@emotion/unitless" "0.7.4"
+    "@emotion/utils" "0.11.2"
+    csstype "^2.5.7"
 
 "@emotion/serialize@^0.11.8":
   version "0.11.8"
@@ -1193,6 +1243,24 @@
     "@emotion/is-prop-valid" "0.8.2"
     "@emotion/serialize" "^0.11.8"
     "@emotion/utils" "0.11.2"
+
+"@emotion/styled-base@^10.0.17":
+  version "10.0.19"
+  resolved "https://registry.yarnpkg.com/@emotion/styled-base/-/styled-base-10.0.19.tgz#53655274797194d86453354fdb2c947b46032db6"
+  integrity sha512-Sz6GBHTbOZoeZQKvkE9gQPzaJ6/qtoQ/OPvyG2Z/6NILlYk60Es1cEcTgTkm26H8y7A0GSgp4UmXl+srvsnFPg==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    "@emotion/is-prop-valid" "0.8.3"
+    "@emotion/serialize" "^0.11.11"
+    "@emotion/utils" "0.11.2"
+
+"@emotion/styled@^10.0.17":
+  version "10.0.17"
+  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.17.tgz#0cd38b8b36259541f2c6717fc22607a120623654"
+  integrity sha512-zHMgWjHDMNjD+ux64POtDnjLAObniu3znxFBLSdV/RiEhSLjHIowfvSbbd/C33/3uwtI6Uzs2KXnRZtka/PpAQ==
+  dependencies:
+    "@emotion/styled-base" "^10.0.17"
+    babel-plugin-emotion "^10.0.17"
 
 "@emotion/styled@^10.0.9":
   version "10.0.14"
@@ -1236,6 +1304,11 @@
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.3.tgz#dfa0c92efe44a1d1a7974fb49ffeb40ef2da5a27"
   integrity sha512-zVgvPwGK7c1aVdUVc9Qv7SqepOGRDrqCw7KZPSZziWGxSlbII3gmvGLPzLX4d0n0BMbamBacUrN22zOMyFFEkQ==
+
+"@emotion/weak-memoize@0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.4.tgz#622a72bebd1e3f48d921563b4b60a762295a81fc"
+  integrity sha512-6PYY5DVdAY1ifaQW6XYTnOMihmBVT27elqSjEoodchsGjzYlEsTQMcEhSud99kVawatyTZRTiVkJ/c6lwbQ7nA==
 
 "@gatsbyjs/relay-compiler@2.0.0-printer-fix.4":
   version "2.0.0-printer-fix.4"
@@ -2529,6 +2602,22 @@ babel-plugin-emotion@^10.0.14:
     find-root "^1.1.0"
     source-map "^0.5.7"
 
+babel-plugin-emotion@^10.0.17:
+  version "10.0.21"
+  resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-10.0.21.tgz#9ebeb12edeea3e60a5476b0e07c9868605e65968"
+  integrity sha512-03o+T6sfVAJhNDcSdLapgv4IeewcFPzxlvBUVdSf7o5PI57ZSxoDvmy+ZulVWSu+rOWAWkEejNcsb29TuzJHbg==
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0"
+    "@emotion/hash" "0.7.3"
+    "@emotion/memoize" "0.7.3"
+    "@emotion/serialize" "^0.11.11"
+    babel-plugin-macros "^2.0.0"
+    babel-plugin-syntax-jsx "^6.18.0"
+    convert-source-map "^1.5.0"
+    escape-string-regexp "^1.0.5"
+    find-root "^1.1.0"
+    source-map "^0.5.7"
+
 babel-plugin-emotion@^9.2.11:
   version "9.2.11"
   resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-9.2.11.tgz#319c005a9ee1d15bb447f59fe504c35fd5807728"
@@ -3120,11 +3209,6 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
-
-bulma@^0.7.0:
-  version "0.7.5"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.5.tgz#35066c37f82c088b68f94450be758fc00a967208"
-  integrity sha512-cX98TIn0I6sKba/DhW0FBjtaDpxTelU166pf7ICXpCCuplHWyu6C9LYZmL5PEsnePIeJaiorsTEzzNk3Tsm1hw==
 
 bytes@3.0.0:
   version "3.0.0"
@@ -13077,9 +13161,9 @@ safe-regex@^1.1.0:
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
 safer-eval@^1.3.0:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/safer-eval/-/safer-eval-1.3.3.tgz#0309e9fcc0609e66c1b599fd0d4772132b260ca8"
-  integrity sha512-j/qb0rtnwTp5V1D7nR0Ns/14HU8OiHPaoZNJhM+Lfmv1nbXZCXG9LHaVW157agEocdSVAeeRNddK/yuWfalzGQ==
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/safer-eval/-/safer-eval-1.3.5.tgz#a75a1193a4e1dfadd34a8c87ad08e7b978c494b1"
+  integrity sha512-BJ//K2Y+EgCbOHEsDGS5YahYBcYy7JcFpKDo2ba5t4MnOGHYtk7HvQkcxTDFvjQvJ0CRcdas/PyF+gTTCay+3w==
   dependencies:
     clones "^1.2.0"
 
